@@ -1,0 +1,7 @@
+{
+    "require": {
+        "dompdf/dompdf": "^3.1",
+        "khaled.alshamaa/ar-php": "*",
+        "tecnickcom/tcpdf": "^6.11"
+    }
+}
