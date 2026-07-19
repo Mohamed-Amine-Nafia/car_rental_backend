@@ -1,11 +1,11 @@
 <?php
 
 $conn = new mysqli(
-    getenv('MYSQLHOST'),
-    getenv('MYSQLUSER'),
-    getenv('MYSQLPASSWORD'),
-    getenv('MYSQLDATABASE'),
-    (int) getenv('MYSQLPORT')
+    "tokaido.proxy.rlwy.net",
+    "root",
+    "ZuBybrYUuViUahqOHnsYRqjnRaySVbtU",
+    "railway",
+    29303
 );
 
 $conn->set_charset("utf8mb4");
