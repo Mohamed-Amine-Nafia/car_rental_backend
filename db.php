@@ -9,7 +9,7 @@ if ($conn->connect_error) {
         "message" => "Database connection failed"
     ]));
 }
-
+   
 
 if (!$conn->set_charset("utf8mb4")) {
     printf("Error loading character set utf8mb4: %s\n", $conn->error);
