@@ -1,16 +1,18 @@
 <?php
 
-$conn = new mysqli("localhost", "root", "", "car_rental");
+$conn = new mysqli(
+    getenv('MYSQLHOST'),
+    getenv('MYSQLUSER'),
+    getenv('MYSQLPASSWORD'),
+    getenv('MYSQLDATABASE'),
+    (int) getenv('MYSQLPORT')
+);
+
 $conn->set_charset("utf8mb4");
 
 if ($conn->connect_error) {
     die(json_encode([
         "success" => false,
-        "message" => "Database connection failed"
+        "message" => "Database connection failed: " . $conn->connect_error
     ]));
-}
-   
-
-if (!$conn->set_charset("utf8mb4")) {
-    printf("Error loading character set utf8mb4: %s\n", $conn->error);
 }
