@@ -2,8 +2,6 @@
   "$schema": "https://schema.railpack.com",
   "provider": "php",
   "phpExtensions": [
-    "calendar",
     "mysqli",
-    "pdo_mysql"
   ]
 }
