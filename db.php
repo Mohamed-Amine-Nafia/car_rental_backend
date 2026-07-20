@@ -1,11 +1,11 @@
 <?php
 
 $conn = new mysqli(
-    getenv("DB_HOST"),
-    getenv("DB_USERNAME"),
-    getenv("DB_PASSWORD"),
-    getenv("DB_DATABASE"),
-    (int) getenv("DB_PORT")
+    getenv("MYSQLHOST"),
+    getenv("MYSQLUSER"),
+    getenv("MYSQLPASSWORD"),
+    getenv("MYSQLDATABASE"),
+    (int) getenv("MYSQLPORT")
 );
 
 if ($conn->connect_error) {
