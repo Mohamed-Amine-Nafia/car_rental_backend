@@ -1,6 +1,6 @@
 <?php
 
-$allowedOrigins = ["http://localhost:5173","http://localhost:5174"];
+$allowedOrigins = ["https://car-rental-website-beryl.vercel.app"];
 
 
 
