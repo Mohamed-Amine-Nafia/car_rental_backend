@@ -1,6 +1,6 @@
 <?php
 
-$allowedOrigins = ["https://car-rental-website-beryl.vercel.app"];
+$allowedOrigins = ["https://car-rental-website-beryl.vercel.app","https://car-rental-system-woad.vercel.app"];
 
 
 
