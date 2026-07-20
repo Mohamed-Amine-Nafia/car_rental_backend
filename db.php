@@ -1,18 +1,18 @@
 <?php
 
 $conn = new mysqli(
-    "tokaido.proxy.rlwy.net",
-    "root",
-    "ZuBybrYUuViUahqOHnsYRqjnRaySVbtU",
-    "railway",
-    29303
+    getenv("DB_HOST"),
+    getenv("DB_USERNAME"),
+    getenv("DB_PASSWORD"),
+    getenv("DB_DATABASE"),
+    (int) getenv("DB_PORT")
 );
-
-$conn->set_charset("utf8mb4");
 
 if ($conn->connect_error) {
     die(json_encode([
         "success" => false,
-        "message" => "Database connection failed: " . $conn->connect_error
+        "message" => "Database connection failed"
     ]));
 }
+
+$conn->set_charset("utf8mb4");
